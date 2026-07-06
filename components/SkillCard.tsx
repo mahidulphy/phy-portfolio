@@ -25,8 +25,8 @@ export default function SkillCard({
       </h3>
 
       <p className="mt-3 mb-5 text-[#895A47] leading-7">
-  {description}
-</p>
+       {description}
+      </p>
 
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
