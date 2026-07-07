@@ -1,5 +1,6 @@
-import Link from "next/link";
 import DesignCard from "@/components/cards/DesignCard";
+import { designs } from "@/data/designs";
+import Link from "next/link";
 
 export default function Design() {
   return (
@@ -20,28 +21,14 @@ export default function Design() {
 
   <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
+  {designs.map((design) => (
     <DesignCard
-      image="/design/amr-poster.jpg"
-      title="AMR Awareness Poster"
-      description="Designed for a college presentation to explain antimicrobial resistance."
-      category="Educational Poster"
+      key={design.title}
+      {...design}
     />
+  ))}
 
-    <DesignCard
-      image="/design/argentina-offer.jpg"
-      title="Argentina Victory Campaign"
-      description="Social media promotional design created for a restaurant campaign."
-      category="Social Media"
-    />
-
-    <DesignCard
-      image="/design/hoodie.jpg"
-      title="College Hoodie Design"
-      description="A custom hoodie concept created for my college."
-      category="Branding"
-    />
-
-  </div>
+</div>
 
   <Link
     href="/design"

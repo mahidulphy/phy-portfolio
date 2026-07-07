@@ -4,7 +4,7 @@ import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Research from "@/components/sections/Research";
-import Design from "@/components/sections/Design";
+import Design from "@/components/sections/Designs";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 
