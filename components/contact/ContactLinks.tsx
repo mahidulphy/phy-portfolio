@@ -26,9 +26,9 @@ const contacts = [
 
 export default function ContactLinks() {
   return (
-    <section className="mx-auto max-w-5xl px-6 pb-24">
+    <section className="mx-auto max-w-5xl px-6 pb-20 md:pb-24">
 
-      <div className="space-y-5">
+      <div className="space-y-6">
 
         {contacts.map((contact) => (
 
@@ -36,24 +36,24 @@ export default function ContactLinks() {
             key={contact.title}
             href={contact.href}
             target={contact.href.startsWith("http") ? "_blank" : undefined}
-            className="group flex items-center justify-between rounded-3xl border border-[#E5DDD6] bg-white px-8 py-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#E5A1B1] hover:shadow-xl"
+            className="group flex items-center justify-between rounded-3xl border border-[#E5DDD6] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#E5A1B1] hover:shadow-xl md:p-8"
           >
 
-            <div>
+            <div className="min-w-0">
 
-              <p className="text-sm uppercase tracking-[0.25em] text-[#895A47]">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#895A47] md:text-sm">
                 {contact.title}
               </p>
 
-              <h3 className="mt-2 text-2xl font-semibold text-[#241D1C]">
+              <h3 className="mt-2 break-words text-lg font-semibold text-[#241D1C] md:text-2xl">
                 {contact.value}
               </h3>
 
             </div>
 
             <ArrowUpRight
-              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-              size={28}
+              size={26}
+              className="ml-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 md:size-7"
             />
 
           </Link>

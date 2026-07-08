@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <Header />
 
-      <main className="bg-[#F2E9E3]">
+      <main className="bg-[#F2E9E3] pt-20">
 
         <ContactHero />
         <ContactLinks />

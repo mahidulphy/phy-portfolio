@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function MyStory() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
+    <section className="mx-auto max-w-7xl px-6 py-20 md:py-24">
 
-      <div className="grid items-center gap-16 lg:grid-cols-2">
+      <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
 
         {/* Photo */}
 
@@ -26,11 +26,11 @@ export default function MyStory() {
             My Story
           </p>
 
-          <h2 className="mt-4 text-5xl font-bold leading-tight text-[#241D1C]">
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold leading-tight text-[#241D1C]">
             Learning one step at a time.
           </h2>
 
-          <div className="mt-8 space-y-6 text-lg leading-8 text-[#895A47]">
+          <div className="mt-8 space-y-6 text-base md:text-lg leading-8 text-[#895A47]">
 
             <p>
               I'm Mahidul, a student from Bangladesh with a deep curiosity

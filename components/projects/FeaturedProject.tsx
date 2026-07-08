@@ -11,13 +11,13 @@ export default function FeaturedProject() {
   if (!featuredProject) return null;
 
   return (
-    <section className="mx-auto max-w-7xl px-6 pb-24">
+    <section className="mx-auto max-w-7xl px-6 pb-20 md:py-24">
 
       <p className="uppercase tracking-[0.3em] text-[#895A47]">
         Featured Project
       </p>
 
-      <div className="mt-10 grid items-center gap-16 lg:grid-cols-2">
+      <div className="mt-10 grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
 
         {/* Image */}
 
@@ -27,7 +27,7 @@ export default function FeaturedProject() {
             alt={featuredProject.title}
             width={900}
             height={600}
-            className="rounded-3xl border border-[#E5DDD6]"
+            className="h-auto w-full object-cover rounded-3xl border border-[#E5DDD6]"
           />
         </div>
 
@@ -35,11 +35,11 @@ export default function FeaturedProject() {
 
         <div>
 
-          <h2 className="text-5xl font-bold text-[#241D1C]">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#241D1C]">
             {featuredProject.title}
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-[#895A47]">
+          <p className="mt-8 text-base md:text-lg leading-8 text-[#895A47]">
             {featuredProject.description}
           </p>
 
@@ -47,18 +47,18 @@ export default function FeaturedProject() {
             {featuredProject.technologies.map((tech) => (
               <span
                 key={tech}
-                className="rounded-full bg-[#E5A1B1]/20 px-4 py-2 text-sm font-medium text-[#241D1C]"
+                className="rounded-full bg-[#E5A1B1]/20 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-[#241D1C]"
               >
-                {tech}
+               {tech}
               </span>
             ))}
           </div>
 
-          <div className="mt-10 flex gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
 
             <Link
               href={featuredProject.live}
-              className="rounded-full bg-[#241D1C] px-6 py-3 text-[#F2E9E3] transition hover:opacity-90"
+              className="rounded-full bg-[#241D1C] px-5 py-3 md:px-5 text-sm md:text-base text-[#F2E9E3] transition hover:opacity-90"
             >
               Live Demo
             </Link>

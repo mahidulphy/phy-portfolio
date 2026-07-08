@@ -11,7 +11,7 @@ export default function AboutPage() {
     <>
       <Header />
 
-      <main className="bg-[#F2E9E3]">
+      <main className="bg-[#F2E9E3] pt-20">
 
         <AboutHero />
         <MyStory />

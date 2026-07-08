@@ -8,7 +8,7 @@ export default function ProjectsGrid() {
 
   if (otherProjects.length === 0) {
     return (
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-20 md:pb-24">
         <p className="text-center text-[#895A47]">
           More projects are coming soon.
         </p>
@@ -19,11 +19,11 @@ export default function ProjectsGrid() {
   return (
     <section className="mx-auto max-w-7xl px-6 pb-24">
 
-      <h2 className="mb-12 text-4xl font-bold text-[#241D1C]">
+      <h2 className="mb-12 text-3xl md:text-4xl font-bold text-[#241D1C]">
         More Projects
       </h2>
 
-      <div className="grid gap-8">
+      <div className="grid gap-10">
         {otherProjects.map((project) => (
           <ProjectCard
             key={project.id}

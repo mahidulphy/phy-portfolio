@@ -5,7 +5,7 @@ export default function ResearchPage() {
   return (
     <>
     <Header />
-    <main className="max-w-5xl mx-auto px-6 py-24">
+    <main className="max-w-5xl mx-auto pt-20 px-6 py-24">
 
       <p className="uppercase tracking-widest text-[#895A47]">
         Research & Learning

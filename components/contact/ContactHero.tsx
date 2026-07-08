@@ -1,6 +1,6 @@
 export default function ContactHero() {
   return (
-    <section className="flex min-h-[75vh] items-center justify-center px-6">
+    <section className="flex min-h-[80vh] items-center justify-center px-6 py-20">
 
       <div className="max-w-3xl text-center">
 
@@ -8,7 +8,7 @@ export default function ContactHero() {
           /CONTACT
         </p>
 
-        <h1 className="mt-8 text-6xl font-bold leading-none text-[#241D1C] md:text-[110px]">
+        <h1 className="mt-8 text-5xl font-bold leading-none text-[#241D1C] sm:text-6xl md:text-7xl lg:text-[110px]">
 
           <span className="block">Let's Build</span>
 
@@ -18,7 +18,7 @@ export default function ContactHero() {
 
         </h1>
 
-        <p className="mx-auto mt-10 max-w-xl text-xl leading-9 text-[#895A47]">
+        <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-[#895A47] md:mt-10 md:text-lg md:leading-9">
 
           Whether it's a collaboration,
           an opportunity,

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Research() {
   return (
-    <section id="research" className="max-w-7xl mx-auto px-6 py-24">
+    <section id="research" className="mx-auto max-w-7xl pt-20 px-6 py-20 md:py-24">
     
       <p className="uppercase tracking-widest text-[#895A47]">
         Research & Learning
@@ -12,7 +12,7 @@ export default function Research() {
         Exploring ideas beyond the classroom.
       </h2>
     
-      <p className="mt-6 max-w-2xl text-lg leading-8 text-[#895A47]">
+      <p className="mt-6 max-w-2xl text-base leading-8 text-[#895A47] md:text-lg">
         I'm currently building this section.
         It will showcase my learning journey, research interests,
         future goals, and the ideas I'm exploring.
@@ -35,12 +35,21 @@ export default function Research() {
         </p>
         
       </div>
-      <Link
-        href="/research"
-        className="inline-block mt-8 rounded-full border border-[#241D1C] px-6 py-3 transition-all duration-300 hover:bg-[#241D1C] hover:text-[#F2E9E3]"
-      >
-        Read More →
-      </Link>
+      <div className="mt-12 flex justify-center">
+
+  <Link
+    href="/research"
+    className="group inline-flex items-center gap-2 rounded-full border border-[#241D1C] px-5 py-3 text-sm font-medium text-[#241D1C] transition-all duration-300 hover:-translate-y-1 hover:bg-[#241D1C] hover:text-[#F2E9E3] md:px-6 md:text-base"
+  >
+    Explore Research
+
+    <span className="transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+
+  </Link>
+
+</div>
     
     </section>
   );

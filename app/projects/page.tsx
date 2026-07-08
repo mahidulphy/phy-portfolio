@@ -10,7 +10,7 @@ export default function ProjectsPage() {
     <>
       <Header />
 
-      <main className="bg=[#F2E9E3]">
+      <main className="bg-[#F2E9E3] pt-20">
         <ProjectsHero />
         <FeaturedProject />
         <ProjectsGrid />
