@@ -25,7 +25,7 @@ export default function Contact() {
         </p>
 
         <a
-          href="mailto:your@email.com"
+          href="mailto:mahidulphy@yahoo.com"
           className="mt-2 inline-block text-xl font-semibold text-[#241D1C] hover:text-[#E5A1B1]"
         >
           mahidulphy@yahoo.com

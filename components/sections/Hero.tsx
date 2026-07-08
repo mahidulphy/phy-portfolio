@@ -14,17 +14,7 @@ export default function Hero() {
           Where design, code, and science connect.
         </p>
 
-        <div className="flex mt-4 gap-4">
-
-          <a href="#projects" className="bg-[#E5A1B1] text-[#241D1C] px-6 py-3 rounded-full hover:bg-[#D999A9] transition-all duration-300 hover:scale-105">
-            View Projects
-          </a>
-
-          <a href="#contact" className="border border-[#241D1C] text-[#241D1C] px-6 py-3 rounded-full hover:bg-[#241D1C] hover:text-[#F2E9E3] transition-all duration-300">
-            Contact Me
-          </a>
-
-        </div>
+        
 
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-2xl text-[#895A47]">
            ↓

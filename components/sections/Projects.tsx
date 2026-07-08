@@ -1,5 +1,6 @@
 import ProjectCard from "@/components/cards/ProjectCard";
 import { projects } from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -26,6 +27,18 @@ export default function Projects() {
                       />
                     ))}
            </div>
+           <div className="mt-14 flex justify-center">
+  <Link
+    href="/projects"
+    className="group inline-flex items-center gap-2 rounded-full border border-[#241D1C] px-8 py-3 font-medium text-[#241D1C] transition-all duration-300 hover:bg-[#241D1C] hover:text-[#F2E9E3]"
+  >
+    Explore All Projects
+
+    <span className="transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
+</div>
 
       </section>
   );
