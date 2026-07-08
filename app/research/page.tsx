@@ -1,5 +1,10 @@
+import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/Footer";
+
 export default function ResearchPage() {
   return (
+    <>
+    <Header />
     <main className="max-w-5xl mx-auto px-6 py-24">
 
       <p className="uppercase tracking-widest text-[#895A47]">
@@ -17,5 +22,8 @@ export default function ResearchPage() {
       </p>
 
     </main>
+    
+    <Footer />
+    </>
   );
 }
